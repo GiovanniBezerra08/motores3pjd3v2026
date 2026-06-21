@@ -66,12 +66,21 @@ public class GameManager : MonoBehaviour
 
             case "MenuPrincipal":
                 ChangeState(GameState.MenuPrincipal);
+
+                UnloadGUI();
+
                 break;
 
             case "GetStarted_Scene":
                 ChangeState(GameState.Gameplay);
 
                 AllocateInput();
+
+                if (!SceneManager.GetSceneByName("GUI").isLoaded)
+                {
+                    SceneManager.LoadScene("GUI", LoadSceneMode.Additive);
+                }
+
                 break;
         }
     }
@@ -88,6 +97,14 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("PlayerInput não encontrado!");
         }
     }
+    
+    void UnloadGUI()
+    {
+        if (SceneManager.GetSceneByName("GUI").isLoaded)
+        {
+            SceneManager.UnloadSceneAsync("GUI");
+        }
+    }
 
     // comecandojogobotao
     public void StartGame()
@@ -101,4 +118,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("Saindo do jogo...");
         Application.Quit();
     }
+    
+    
 }
