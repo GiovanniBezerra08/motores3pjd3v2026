@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 #if ENABLE_INPUT_SYSTEM
 using UnityEngine.InputSystem;
@@ -19,8 +20,10 @@ namespace StarterAssets
 		[Header("Mouse Cursor Settings")]
 		public bool cursorLocked = true;
 		public bool cursorInputForLook = true;
-
-
+			
+		
+		private PlayerInput playerInput;
+		
 
 #if ENABLE_INPUT_SYSTEM
 		
@@ -54,14 +57,40 @@ namespace StarterAssets
 			if(value.isPressed) InteractOM.Interact();
 		}
 #endif
-
-			private void Awake()
-	{
-		SetCursorState(cursorLocked);
-		Cursor.visible = false;
-
 		
-	}
+		private void Awake()
+		{
+			SetCursorState(cursorLocked);
+			Cursor.visible = false;
+		}
+
+		private void Start()
+		{
+			playerInput = GetComponent<PlayerInput>();
+			
+			playerInput.actions.FindAction("Move").performed += context => move = context.ReadValue<Vector2>();
+			playerInput.actions.FindAction("Move").canceled += context => move = Vector2.zero;
+			
+			playerInput.actions.FindAction("Look").performed += context => look = context.ReadValue<Vector2>();
+			
+			playerInput.actions.FindAction("Jump").started += context => jump = true;
+			playerInput.actions.FindAction("Jump").canceled += context => jump = false;
+			
+			playerInput.actions.FindAction("Sprint").started += context => sprint = true;
+			playerInput.actions.FindAction("Sprint").canceled += context => sprint = false;
+			
+			playerInput.actions.FindAction("Interact").started += context => InteractOM.Interact();
+		}
+
+		private void OnLookPerformed(InputAction.CallbackContext obj)
+		{
+			look = obj.ReadValue<Vector2>();
+		}
+
+		private void OnMovePerformed(InputAction.CallbackContext obj)
+		{
+			move = obj.ReadValue<Vector2>();
+		}
 
 		public void MoveInput(Vector2 newMoveDirection)
 		{
