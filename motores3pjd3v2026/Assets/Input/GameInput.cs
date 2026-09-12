@@ -145,7 +145,18 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";TecladoEMouseSingle"",
+                    ""groups"": "";TecladoEMouseSingle;keyboardP1"",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fd122ae0-b2bb-4280-9650-8b02289f6faf"",
+                    ""path"": ""<Keyboard>/numpad0"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";TecladoEMouseSingle;keyboardP2"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -189,7 +200,7 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";TecladoEMouseSingle"",
+                    ""groups"": "";TecladoEMouseSingle;keyboardP1"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -200,7 +211,7 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";TecladoEMouseSingle"",
+                    ""groups"": "";TecladoEMouseSingle;keyboardP1"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -211,7 +222,7 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";TecladoEMouseSingle"",
+                    ""groups"": "";TecladoEMouseSingle;keyboardP1"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -222,7 +233,62 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";TecladoEMouseSingle"",
+                    ""groups"": "";TecladoEMouseSingle;keyboardP1"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""setas"",
+                    ""id"": ""971b6807-ff38-48da-bd63-1e52f2d34de5"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""fda313cd-6887-4de6-8b82-d4aa9b7af6d4"",
+                    ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";keyboardP2"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""266da007-f3e1-4e4b-8dc6-77e566e9141b"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";keyboardP2"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""c82fecee-7bb2-4790-8cca-2da49386d79d"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";keyboardP2"",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""dc769de2-d9a6-4589-b4de-85dc5253daa6"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";keyboardP2"",
                     ""action"": ""Move"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -244,7 +310,7 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                     ""path"": ""<Pointer>/delta"",
                     ""interactions"": """",
                     ""processors"": ""InvertVector2(invertX=false)"",
-                    ""groups"": "";TecladoEMouseSingle"",
+                    ""groups"": "";TecladoEMouseSingle;keyboardP1"",
                     ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -255,7 +321,18 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/leftShift"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";TecladoEMouseSingle"",
+                    ""groups"": "";TecladoEMouseSingle;keyboardP1"",
+                    ""action"": ""Sprint"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""0be6953c-fd06-4adc-9e49-8bfea5ac8737"",
+                    ""path"": ""<Keyboard>/numpad3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";TecladoEMouseSingle;keyboardP2"",
                     ""action"": ""Sprint"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -277,7 +354,18 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                     ""path"": ""<Keyboard>/e"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": "";TecladoEMouseSingle"",
+                    ""groups"": "";TecladoEMouseSingle;keyboardP1"",
+                    ""action"": ""Interact"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""39acece7-4147-4377-b7d5-d62fad10e404"",
+                    ""path"": ""<Keyboard>/numpad7"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";TecladoEMouseSingle;keyboardP2"",
                     ""action"": ""Interact"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -326,8 +414,19 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
     ],
     ""controlSchemes"": [
         {
-            ""name"": ""TecladoEMouseSingle"",
-            ""bindingGroup"": ""TecladoEMouseSingle"",
+            ""name"": ""Controle"",
+            ""bindingGroup"": ""Controle"",
+            ""devices"": [
+                {
+                    ""devicePath"": ""<Gamepad>"",
+                    ""isOptional"": false,
+                    ""isOR"": false
+                }
+            ]
+        },
+        {
+            ""name"": ""keyboardP1"",
+            ""bindingGroup"": ""keyboardP1"",
             ""devices"": [
                 {
                     ""devicePath"": ""<Keyboard>"",
@@ -335,18 +434,18 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
                     ""isOR"": false
                 },
                 {
-                    ""devicePath"": ""<Mouse>"",
+                    ""devicePath"": ""<Pointer>"",
                     ""isOptional"": false,
                     ""isOR"": false
                 }
             ]
         },
         {
-            ""name"": ""Controle"",
-            ""bindingGroup"": ""Controle"",
+            ""name"": ""keyboardP2"",
+            ""bindingGroup"": ""keyboardP2"",
             ""devices"": [
                 {
-                    ""devicePath"": ""<Gamepad>"",
+                    ""devicePath"": ""<Keyboard>"",
                     ""isOptional"": false,
                     ""isOR"": false
                 }
@@ -677,19 +776,6 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
     /// Provides a new <see cref="UIActions" /> instance referencing this action map.
     /// </summary>
     public UIActions @UI => new UIActions(this);
-    private int m_TecladoEMouseSingleSchemeIndex = -1;
-    /// <summary>
-    /// Provides access to the input control scheme.
-    /// </summary>
-    /// <seealso cref="UnityEngine.InputSystem.InputControlScheme" />
-    public InputControlScheme TecladoEMouseSingleScheme
-    {
-        get
-        {
-            if (m_TecladoEMouseSingleSchemeIndex == -1) m_TecladoEMouseSingleSchemeIndex = asset.FindControlSchemeIndex("TecladoEMouseSingle");
-            return asset.controlSchemes[m_TecladoEMouseSingleSchemeIndex];
-        }
-    }
     private int m_ControleSchemeIndex = -1;
     /// <summary>
     /// Provides access to the input control scheme.
@@ -701,6 +787,32 @@ public partial class @GameInput: IInputActionCollection2, IDisposable
         {
             if (m_ControleSchemeIndex == -1) m_ControleSchemeIndex = asset.FindControlSchemeIndex("Controle");
             return asset.controlSchemes[m_ControleSchemeIndex];
+        }
+    }
+    private int m_keyboardP1SchemeIndex = -1;
+    /// <summary>
+    /// Provides access to the input control scheme.
+    /// </summary>
+    /// <seealso cref="UnityEngine.InputSystem.InputControlScheme" />
+    public InputControlScheme keyboardP1Scheme
+    {
+        get
+        {
+            if (m_keyboardP1SchemeIndex == -1) m_keyboardP1SchemeIndex = asset.FindControlSchemeIndex("keyboardP1");
+            return asset.controlSchemes[m_keyboardP1SchemeIndex];
+        }
+    }
+    private int m_keyboardP2SchemeIndex = -1;
+    /// <summary>
+    /// Provides access to the input control scheme.
+    /// </summary>
+    /// <seealso cref="UnityEngine.InputSystem.InputControlScheme" />
+    public InputControlScheme keyboardP2Scheme
+    {
+        get
+        {
+            if (m_keyboardP2SchemeIndex == -1) m_keyboardP2SchemeIndex = asset.FindControlSchemeIndex("keyboardP2");
+            return asset.controlSchemes[m_keyboardP2SchemeIndex];
         }
     }
     /// <summary>
